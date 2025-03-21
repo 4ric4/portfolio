@@ -58,7 +58,7 @@
                         </div>
                         <div
                             class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-16 rounded-full shadow-lg border border-primary">
-                            <!-- Usando a imagem importada no src -->
+                            <!-- Usando a imagem importada corretamente no src -->
                             <img :src="euImage" alt="Hero pic" width="500" height="auto" loading="lazy"
                                 class="w-full h-full rounded-full object-cover" />
                         </div>
@@ -70,11 +70,9 @@
 </template>
 
 <script setup>
-// Importando a imagem do caminho correto
+// Importando a imagem corretamente
 import euImage from '@/assets/eu.png';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 </script>
-
