@@ -5,11 +5,13 @@
             <div class="h20 w-3/5 bg-gradient-to-r from-[#670ccf] opacity-40 blur-2xl"></div>
         </div>
         <div class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
-            <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
+            <div
+                class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                 <div class="lg:py-6">
                     <div class="'text-center lg:text-left'">
                         <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">
+                            Hi, I'm <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">
                                 Ricardo
                             </span>
                         </h1>
@@ -48,6 +50,7 @@
                                     CURRICULO</a>
                             </div>
                         </button>
+
                     </div>
                 </div>
                 <div class="lg:h-full md:flex">
@@ -58,8 +61,7 @@
                         </div>
                         <div
                             class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-16 rounded-full shadow-lg border border-primary">
-                            <!-- Usando a imagem importada corretamente no src -->
-                            <img :src="euImage" alt="Hero pic" width="500" height="auto" loading="lazy"
+                            <img src="@/assets/eu.png" alt="Hero pic" width="500" height="auto" loading="lazy"
                                 class="w-full h-full rounded-full object-cover" />
                         </div>
                     </div>
@@ -70,8 +72,6 @@
 </template>
 
 <script setup>
-// Importando a imagem corretamente
-import euImage from '@/assets/eu.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
